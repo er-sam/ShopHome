@@ -1,0 +1,35 @@
+<%- include('./partials/_head.ejs'); %>
+    <%- include('./partials/header-log.ejs'); %>
+        <!-- form  -->
+
+        <div class="head-log">
+            <h1>ShopHome</h1>
+        </div>
+        <div class="form-contain">
+
+            <div class="log">
+                <form action="/cart">
+                    <input type="email" name="email" id="" placeholder="E-mail">
+                    <input type="password" name="password" id="" placeholder="Password">
+                    <button type="submit">Log In</button>
+                </form>
+                <!-- form sub  -->
+            </div>
+            <div class="reg">
+                <form action="/login" method="post">
+                    <input type="text" name="name" id="" placeholder="Name">
+                    <input type="email" name="email" id="" placeholder="Email">
+                    <input type="password" name="password" id="" placeholder="Password">
+                    <input type="password" name="cpassword" id="" placeholder="Confirm Password">
+                    <button type="submit">Sign Up Now</button>
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+
+
+                <%- include('./partials/_footer.ejs'); %>

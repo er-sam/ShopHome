@@ -1,0 +1,57 @@
+<div class="logo" style="text-align: center;">
+    <a href="/"><span id="log">&#8962;|</span>Shophome!|</a>
+</div>
+
+<!-- <p style=" background: #000; color: orangered; padding: 8px;">
+    <a href="/" style="font-weight: 800; color: rgb(207, 184, 52); border: 2px solid red; padding: 4px; background: rgb(131, 63, 63);">Home</a>
+    
+</p> -->
+<p class="p"></p>
+
+<h1 style="text-align: center; background: #000;color: rgb(236, 136, 22);">
+Server Side Login Section</h1>
+
+
+<!-- <You class="p">You can not create account as a Admin </p> -->
+
+<div class="form-contain" style="background-color: rgb(89, 109, 104);">
+    <div class="log">
+        <form action="/admin">
+            <input type="text" name="admin-id" id="" placeholder="Adminm ID">
+            <input type="password" name="admin-key" id="" placeholder="Admin Key">
+            <button type="submit" style="background-color: rgb(78, 75, 75); color: rgb(43, 1, 1);">
+                Server Log</button>
+        </form>
+        <!-- form sub  -->
+    </div>
+</div>
+
+
+<style>
+    body{
+        background: rgb(105, 129, 123);
+    }
+    .p{
+        /* text-align: center; */
+        background: #000;
+        color: orangered;
+        padding: 5px;
+    }
+    .p::after{
+        content:"This Section is only for Admin";
+        animation: change 3s infinite ease-in;
+    }
+
+    @keyframes change{
+        0%{
+            content: 'This Section is only for Admin';
+        }
+        50%{
+            content: 'You can not create account as a Admin ';
+        }
+    }
+    input{
+        border: none;
+    }
+
+</style>
